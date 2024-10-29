@@ -1,9 +1,10 @@
-//import "./carousel.css";
+import Image from "next/image";
 export default function Card({ image, title }) {
-  return (
-    <div>
-      {image}
-      {title}
-    </div>
-  );
+    const imgSrc = require("/src/assets/dumbbell-svgrepo-com.svg");
+    return (
+        <div>
+            {title}
+            <img src={imgSrc} />
+        </div>
+    );
 }
