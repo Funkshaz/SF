@@ -1,10 +1,9 @@
 import Image from "next/image";
 export default function Card({ image, title }) {
-    const imgSrc = require("/src/assets/dumbbell-svgrepo-com.svg");
     return (
-        <div>
+        <div className="card">
             {title}
-            <img src={imgSrc} />
+            <Image src={image} width="32" height="32" alt={title}></Image>
         </div>
     );
 }
