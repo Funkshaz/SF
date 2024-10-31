@@ -2,12 +2,14 @@
     border: 1px solid #C9C9C9;
     border-radius: 0.5rem;
     width:fit-content;
+    padding:1rem;
 }
 .carousel {
     width:100%;
-    
 }
+
 .flex-container {
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
 }

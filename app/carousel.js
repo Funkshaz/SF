@@ -5,8 +5,15 @@ export default function Carousel({ heading, cards }) {
         <div className="carousel">
             <h1>{heading}</h1>
             <div className="flex-container">
-                <Card title="Test" image="dumbbell-svgrepo-com.svg"></Card>
-                <Card title="Test" image="dumbbell-svgrepo-com.svg"></Card>
+                {cards.map(function (card, i) {
+                    return (
+                        <Card
+                            title={card.title}
+                            image={card.image}
+                            key={i}
+                        ></Card>
+                    );
+                })}
             </div>
         </div>
     );
